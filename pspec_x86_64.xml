@@ -20,7 +20,7 @@
         <PartOf>desktop.kde.core</PartOf>
         <Files>
             <Path fileType="library">/usr/lib64/libKWaylandServer.so.5</Path>
-            <Path fileType="library">/usr/lib64/libKWaylandServer.so.5.19.5</Path>
+            <Path fileType="library">/usr/lib64/libKWaylandServer.so.5.20.1</Path>
             <Path fileType="data">/usr/share/qlogging-categories5/kwaylandserver.categories</Path>
         </Files>
     </Package>
@@ -31,15 +31,20 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="5">kwayland-server</Dependency>
+            <Dependency release="6">kwayland-server</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="header">/usr/include/KWaylandServer/abstract_data_source.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/appmenu_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/blur_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/buffer_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/clientconnection.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/compositor_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/contrast_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/datacontroldevice_v1_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/datacontroldevicemanager_v1_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/datacontroloffer_v1_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/datacontrolsource_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/datadevice_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/datadevicemanager_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/dataoffer_interface.h</Path>
@@ -51,10 +56,13 @@
             <Path fileType="header">/usr/include/KWaylandServer/filtered_display.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/global.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/idle_interface.h</Path>
-            <Path fileType="header">/usr/include/KWaylandServer/idleinhibit_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/idleinhibit_v1_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/inputmethod_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/keyboard_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/keyboard_shortcuts_inhibit_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/keystate_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/kwaylandserver_export.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/layershell_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/linuxdmabuf_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/output_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/outputchangeset.h</Path>
@@ -67,25 +75,25 @@
             <Path fileType="header">/usr/include/KWaylandServer/pointer_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/pointerconstraints_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/pointergestures_interface.h</Path>
-            <Path fileType="header">/usr/include/KWaylandServer/qtsurfaceextension_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/primaryselectiondevicemanager_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/region_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/relativepointer_interface.h</Path>
-            <Path fileType="header">/usr/include/KWaylandServer/remote_access_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/resource.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/screencast_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/seat_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/server_decoration_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/server_decoration_palette_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/shadow_interface.h</Path>
-            <Path fileType="header">/usr/include/KWaylandServer/shell_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/slide_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/subcompositor_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/surface_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/tablet_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/textinput_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/touch_interface.h</Path>
-            <Path fileType="header">/usr/include/KWaylandServer/xdgdecoration_interface.h</Path>
-            <Path fileType="header">/usr/include/KWaylandServer/xdgforeign_interface.h</Path>
-            <Path fileType="header">/usr/include/KWaylandServer/xdgoutput_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/viewporter_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/xdgdecoration_v1_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/xdgforeign_v2_interface.h</Path>
+            <Path fileType="header">/usr/include/KWaylandServer/xdgoutput_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/xdgshell_interface.h</Path>
             <Path fileType="header">/usr/include/kwaylandserver_version.h</Path>
             <Path fileType="library">/usr/lib64/cmake/KWaylandServer/KWaylandServerConfig.cmake</Path>
@@ -96,9 +104,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2020-09-12</Date>
-            <Version>5.19.5</Version>
+        <Update release="6">
+            <Date>2020-10-20</Date>
+            <Version>5.20.1</Version>
             <Comment>Packaging update</Comment>
             <Name>F. von Gellhorn</Name>
             <Email>flinux@vongellhorn.ch</Email>
