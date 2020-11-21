@@ -20,7 +20,7 @@
         <PartOf>desktop.kde.core</PartOf>
         <Files>
             <Path fileType="library">/usr/lib64/libKWaylandServer.so.5</Path>
-            <Path fileType="library">/usr/lib64/libKWaylandServer.so.5.20.2</Path>
+            <Path fileType="library">/usr/lib64/libKWaylandServer.so.5.20.3</Path>
             <Path fileType="data">/usr/share/qlogging-categories5/kwaylandserver.categories</Path>
         </Files>
     </Package>
@@ -31,7 +31,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="7">kwayland-server</Dependency>
+            <Dependency release="8">kwayland-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/KWaylandServer/abstract_data_source.h</Path>
@@ -104,9 +104,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="7">
-            <Date>2020-10-30</Date>
-            <Version>5.20.2</Version>
+        <Update release="8">
+            <Date>2020-11-20</Date>
+            <Version>5.20.3</Version>
             <Comment>Packaging update</Comment>
             <Name>F. von Gellhorn</Name>
             <Email>flinux@vongellhorn.ch</Email>
