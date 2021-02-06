@@ -31,7 +31,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="10">kwayland-server</Dependency>
+            <Dependency release="11">kwayland-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/KWaylandServer/abstract_data_source.h</Path>
@@ -104,8 +104,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="10">
-            <Date>2021-01-09</Date>
+        <Update release="11">
+            <Date>2021-02-04</Date>
             <Version>5.20.5</Version>
             <Comment>Packaging update</Comment>
             <Name>F. von Gellhorn</Name>

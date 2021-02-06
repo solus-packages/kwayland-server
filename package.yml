@@ -1,6 +1,6 @@
 name       : kwayland-server
 version    : 5.20.5
-release    : 10
+release    : 11
 source     :
     - https://cdn.download.kde.org/stable/plasma/5.20.5/kwayland-server-5.20.5.tar.xz : e0f36407ba32721936b0b14894480279f60effc088e4e1f3cde6e5c584945d2a
 license    : LGPL-2.1-or-later
@@ -10,12 +10,10 @@ description: |
     Wayland server components built on KDE Frameworks
 builddeps  :
     - pkgconfig(gl)
-    - pkgconfig(Qt5UiTools)
     - pkgconfig(Qt5WaylandClient)
     - pkgconfig(wayland-client)
     - pkgconfig(wayland-protocols)
     - pkgconfig(x11)
-    - extra-cmake-modules
     - kwayland-devel
     - plasma-wayland-protocols-devel
 setup      : |
