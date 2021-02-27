@@ -8,9 +8,7 @@ libQt5Core.so.5:_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE
 libQt5Core.so.5:_ZN10QByteArray11fromRawDataEPKci
 libQt5Core.so.5:_ZN10QByteArray11reallocDataEj6QFlagsIN10QArrayData16AllocationOptionEE
 libQt5Core.so.5:_ZN10QByteArray6appendEPKc
-libQt5Core.so.5:_ZN10QByteArray6appendERKS_
 libQt5Core.so.5:_ZN10QByteArray6appendEc
-libQt5Core.so.5:_ZN10QByteArrayC1EPKci
 libQt5Core.so.5:_ZN10QByteArrayaSERKS_
 libQt5Core.so.5:_ZN11QDataStreamC1EP9QIODevice
 libQt5Core.so.5:_ZN11QDataStreamD1Ev
@@ -42,6 +40,7 @@ libQt5Core.so.5:_ZN15QSocketNotifier16staticMetaObjectE
 libQt5Core.so.5:_ZN15QSocketNotifier9activatedE17QSocketDescriptorNS_4TypeENS_14QPrivateSignalE
 libQt5Core.so.5:_ZN15QSocketNotifierC1ExNS_4TypeEP7QObject
 libQt5Core.so.5:_ZN15QtSharedPointer20ExternalRefCountData9getAndRefEPK7QObject
+libQt5Core.so.5:_ZN16QCoreApplication15eventDispatcherEv
 libQt5Core.so.5:_ZN16QLoggingCategoryC1EPKc9QtMsgType
 libQt5Core.so.5:_ZN16QLoggingCategoryD1Ev
 libQt5Core.so.5:_ZN20QFutureInterfaceBase11setRunnableEP9QRunnable
@@ -59,6 +58,7 @@ libQt5Core.so.5:_ZN5QFileC1Ev
 libQt5Core.so.5:_ZN5QFileD1Ev
 libQt5Core.so.5:_ZN5QSize9transposeEv
 libQt5Core.so.5:_ZN5QUuid10createUuidEv
+libQt5Core.so.5:_ZN6QDebug9putStringEPK5QCharm
 libQt5Core.so.5:_ZN6QDebugD1Ev
 libQt5Core.so.5:_ZN6QTimer11setIntervalEi
 libQt5Core.so.5:_ZN6QTimer16staticMetaObjectE
@@ -87,8 +87,8 @@ libQt5Core.so.5:_ZN7QObjectD2Ev
 libQt5Core.so.5:_ZN7QString13toUtf8_helperERKS_
 libQt5Core.so.5:_ZN7QString15fromUtf8_helperEPKci
 libQt5Core.so.5:_ZN7QString18toLocal8Bit_helperEPK5QChari
+libQt5Core.so.5:_ZN7QString6appendERKS_
 libQt5Core.so.5:_ZN7QStringaSERKS_
-libQt5Core.so.5:_ZN7QThread13currentThreadEv
 libQt5Core.so.5:_ZN9QFileInfoC1ERK7QString
 libQt5Core.so.5:_ZN9QFileInfoD1Ev
 libQt5Core.so.5:_ZN9QHashData11free_helperEPFvPNS_4NodeEE
@@ -114,10 +114,10 @@ libQt5Core.so.5:_ZN9QRunnableD2Ev
 libQt5Core.so.5:_ZN9QtPrivate20QStringList_containsEPK11QStringList13QLatin1StringN2Qt15CaseSensitivityE
 libQt5Core.so.5:_ZN9QtPrivate20QStringList_containsEPK11QStringListRK7QStringN2Qt15CaseSensitivityE
 libQt5Core.so.5:_ZNK10QByteArray5splitEc
+libQt5Core.so.5:_ZNK10QByteArray6isNullEv
 libQt5Core.so.5:_ZNK10QByteArray8toBase64Ev
 libQt5Core.so.5:_ZNK11QFileDevice6handleEv
 libQt5Core.so.5:_ZNK11QMetaObject10Connection18isConnected_helperEv
-libQt5Core.so.5:_ZNK11QMetaObject4castEP7QObject
 libQt5Core.so.5:_ZNK11QMetaObject9classNameEv
 libQt5Core.so.5:_ZNK11QObjectData17dynamicMetaObjectEv
 libQt5Core.so.5:_ZNK12QMapNodeBase12previousNodeEv
@@ -126,12 +126,10 @@ libQt5Core.so.5:_ZNK14QMessageLogger7warningEPKcz
 libQt5Core.so.5:_ZNK14QMessageLogger7warningEv
 libQt5Core.so.5:_ZNK20QFutureInterfaceBase10isCanceledEv
 libQt5Core.so.5:_ZNK5QRectorERKS_
-libQt5Core.so.5:_ZNK5QUuid11toByteArrayEv
 libQt5Core.so.5:_ZNK5QUuid8toStringEv
 libQt5Core.so.5:_ZNK6QRectF8containsERK7QPointF
 libQt5Core.so.5:_ZNK7QObject10metaObjectEv
 libQt5Core.so.5:_ZNK7QString3argExii5QChar
-libQt5Core.so.5:_ZNK7QThread15eventDispatcherEv
 libQt5Core.so.5:_ZNK9QFileInfo13symLinkTargetEv
 libQt5Core.so.5:_ZTI20QFutureInterfaceBase
 libQt5Core.so.5:_ZTI7QObject
@@ -148,12 +146,14 @@ libQt5Gui.so.5:_ZN5QIconD1Ev
 libQt5Gui.so.5:_ZN5QIconaSERKS_
 libQt5Gui.so.5:_ZN6QImageC1EPKhiiiNS_6FormatEPFvPvES3_
 libQt5Gui.so.5:_ZN6QImageC1Ev
+libQt5Gui.so.5:_ZN7QRegionC1ERK5QRectNS_10RegionTypeE
 libQt5Gui.so.5:_ZN7QRegionC1ERKS_
 libQt5Gui.so.5:_ZN7QRegionC1EiiiiNS_10RegionTypeE
 libQt5Gui.so.5:_ZN7QRegionC1Ev
 libQt5Gui.so.5:_ZN7QRegionD1Ev
 libQt5Gui.so.5:_ZN7QRegionaSERKS_
 libQt5Gui.so.5:_ZN7QRegionmIERKS_
+libQt5Gui.so.5:_ZN7QRegionoRERKS_
 libQt5Gui.so.5:_ZN7QRegionpLERK5QRect
 libQt5Gui.so.5:_ZN7QRegionpLERKS_
 libQt5Gui.so.5:_ZNK10QMatrix4x47mapRectERK5QRect
@@ -162,10 +162,11 @@ libQt5Gui.so.5:_ZNK5QIcon4nameEv
 libQt5Gui.so.5:_ZNK7QRegion11intersectedERKS_
 libQt5Gui.so.5:_ZNK7QRegion3endEv
 libQt5Gui.so.5:_ZNK7QRegion5beginEv
-libQt5Gui.so.5:_ZNK7QRegion6unitedERK5QRect
 libQt5Gui.so.5:_ZNK7QRegion6unitedERKS_
 libQt5Gui.so.5:_ZNK7QRegion7isEmptyEv
 libQt5Gui.so.5:_ZNK7QRegion8containsERK6QPoint
+libQt5Gui.so.5:_ZNK7QRegionanERK5QRect
+libQt5Gui.so.5:_ZNK7QRegioneqERKS_
 libQt5Gui.so.5:_ZlsR11QDataStreamRK5QIcon
 libc.so.6:__cxa_atexit
 libc.so.6:__stack_chk_fail
@@ -175,6 +176,7 @@ libc.so.6:lseek
 libc.so.6:memcmp
 libc.so.6:memcpy
 libc.so.6:memmove
+libc.so.6:memset
 libc.so.6:strcmp
 libc.so.6:strlen
 libc.so.6:unlink
@@ -201,8 +203,10 @@ libwayland-server.so.0:wl_client_post_no_memory
 libwayland-server.so.0:wl_display_add_destroy_listener
 libwayland-server.so.0:wl_display_add_socket
 libwayland-server.so.0:wl_display_add_socket_auto
+libwayland-server.so.0:wl_display_add_socket_fd
 libwayland-server.so.0:wl_display_create
 libwayland-server.so.0:wl_display_destroy
+libwayland-server.so.0:wl_display_destroy_clients
 libwayland-server.so.0:wl_display_flush_clients
 libwayland-server.so.0:wl_display_get_event_loop
 libwayland-server.so.0:wl_display_get_serial
