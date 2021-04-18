@@ -35,7 +35,7 @@ libQt5Core.so.5:_ZN12QMapDataBase20freeNodeAndRebalanceEP12QMapNodeBase
 libQt5Core.so.5:_ZN12QMapDataBase8freeDataEPS_
 libQt5Core.so.5:_ZN12QMapDataBase8freeTreeEP12QMapNodeBasei
 libQt5Core.so.5:_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE
-libQt5Core.so.5:_ZN14QTemporaryFileC1EP7QObject
+libQt5Core.so.5:_ZN14QTemporaryFileC1Ev
 libQt5Core.so.5:_ZN15QSocketNotifier16staticMetaObjectE
 libQt5Core.so.5:_ZN15QSocketNotifier9activatedE17QSocketDescriptorNS_4TypeENS_14QPrivateSignalE
 libQt5Core.so.5:_ZN15QSocketNotifierC1ExNS_4TypeEP7QObject
@@ -131,6 +131,7 @@ libQt5Core.so.5:_ZNK6QRectF8containsERK7QPointF
 libQt5Core.so.5:_ZNK7QObject10metaObjectEv
 libQt5Core.so.5:_ZNK7QString3argExii5QChar
 libQt5Core.so.5:_ZNK9QFileInfo13symLinkTargetEv
+libQt5Core.so.5:_ZNK9QIODevice11errorStringEv
 libQt5Core.so.5:_ZTI20QFutureInterfaceBase
 libQt5Core.so.5:_ZTI7QObject
 libQt5Core.so.5:_ZTI9QRunnable
