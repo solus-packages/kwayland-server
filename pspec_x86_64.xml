@@ -20,7 +20,7 @@
         <PartOf>desktop.kde.core</PartOf>
         <Files>
             <Path fileType="library">/usr/lib64/libKWaylandServer.so.5</Path>
-            <Path fileType="library">/usr/lib64/libKWaylandServer.so.5.21.5</Path>
+            <Path fileType="library">/usr/lib64/libKWaylandServer.so.5.22.1</Path>
             <Path fileType="data">/usr/share/qlogging-categories5/kwaylandserver.categories</Path>
         </Files>
     </Package>
@@ -31,7 +31,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="16">kwayland-server</Dependency>
+            <Dependency release="17">kwayland-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/KWaylandServer/abstract_data_source.h</Path>
@@ -76,7 +76,6 @@
             <Path fileType="header">/usr/include/KWaylandServer/pointerconstraints_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/pointergestures_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/primaryselectiondevicemanager_v1_interface.h</Path>
-            <Path fileType="header">/usr/include/KWaylandServer/region_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/relativepointer_v1_interface.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/resource.h</Path>
             <Path fileType="header">/usr/include/KWaylandServer/screencast_v1_interface.h</Path>
@@ -107,9 +106,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="16">
-            <Date>2021-05-08</Date>
-            <Version>5.21.5</Version>
+        <Update release="17">
+            <Date>2021-06-18</Date>
+            <Version>5.22.1</Version>
             <Comment>Packaging update</Comment>
             <Name>F. von Gellhorn</Name>
             <Email>flinux@vongellhorn.ch</Email>
