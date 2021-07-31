@@ -1,8 +1,8 @@
 name       : kwayland-server
-version    : 5.22.2
-release    : 18
+version    : 5.22.4
+release    : 19
 source     :
-    - https://cdn.download.kde.org/stable/plasma/5.22.2.1/kwayland-server-5.22.2.1.tar.xz : 8d71bf529572897f4b3d76f6735bf4799176e6ccd2f4eeb58e5c58fb117325e6
+    - https://cdn.download.kde.org/stable/plasma/5.22.4/kwayland-server-5.22.4.tar.xz : da167417221610d521fefbe4ae1322aa20e7d6ac782cadcb61972f915589767c
 license    : LGPL-2.1-or-later
 component  : desktop.kde.core
 summary    : Wayland server components built on KDE Frameworks
