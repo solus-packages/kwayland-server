@@ -23,7 +23,6 @@ libQt5Core.so.5:_ZN11QMetaObject8activateEP7QObjectPKS_iPPv
 libQt5Core.so.5:_ZN11QTextStreamlsERK7QString
 libQt5Core.so.5:_ZN11QTextStreamlsEc
 libQt5Core.so.5:_ZN11QTextStreamlsEd
-libQt5Core.so.5:_ZN11QTextStreamlsEi
 libQt5Core.so.5:_ZN11QTextStreamlsEj
 libQt5Core.so.5:_ZN11QThreadPool14globalInstanceEv
 libQt5Core.so.5:_ZN11QThreadPool5startEP9QRunnablei
@@ -82,6 +81,7 @@ libQt5Core.so.5:_ZN7QObject16disconnectNotifyERK11QMetaMethod
 libQt5Core.so.5:_ZN7QObject16staticMetaObjectE
 libQt5Core.so.5:_ZN7QObject5eventEP6QEvent
 libQt5Core.so.5:_ZN7QObject9destroyedEPS_
+libQt5Core.so.5:_ZN7QObject9setParentEPS_
 libQt5Core.so.5:_ZN7QObjectC2EPS_
 libQt5Core.so.5:_ZN7QObjectD2Ev
 libQt5Core.so.5:_ZN7QString11reallocDataEjb
@@ -103,13 +103,11 @@ libQt5Core.so.5:_ZN9QHashData8nextNodeEPNS_4NodeE
 libQt5Core.so.5:_ZN9QListData11detach_growEPii
 libQt5Core.so.5:_ZN9QListData11shared_nullE
 libQt5Core.so.5:_ZN9QListData5eraseEPPv
-libQt5Core.so.5:_ZN9QListData6appendERKS_
 libQt5Core.so.5:_ZN9QListData6appendEv
 libQt5Core.so.5:_ZN9QListData6detachEi
 libQt5Core.so.5:_ZN9QListData6insertEi
 libQt5Core.so.5:_ZN9QListData6removeEi
 libQt5Core.so.5:_ZN9QListData7disposeEPNS_4DataE
-libQt5Core.so.5:_ZN9QListData7prependEv
 libQt5Core.so.5:_ZN9QListData7reallocEi
 libQt5Core.so.5:_ZN9QMetaType22registerNormalizedTypeERK10QByteArrayPFvPvEPFS3_S3_PKvEi6QFlagsINS_8TypeFlagEEPK11QMetaObject
 libQt5Core.so.5:_ZN9QRunnableD2Ev
@@ -128,6 +126,7 @@ libQt5Core.so.5:_ZNK14QMessageLogger5debugEPKcz
 libQt5Core.so.5:_ZNK14QMessageLogger7warningEPKcz
 libQt5Core.so.5:_ZNK14QMessageLogger7warningEv
 libQt5Core.so.5:_ZNK20QFutureInterfaceBase10isCanceledEv
+libQt5Core.so.5:_ZNK5QRect10intersectsERKS_
 libQt5Core.so.5:_ZNK5QRectorERKS_
 libQt5Core.so.5:_ZNK5QUuid8toStringENS_12StringFormatE
 libQt5Core.so.5:_ZNK5QUuid8toStringEv
@@ -139,7 +138,6 @@ libQt5Core.so.5:_ZTI20QFutureInterfaceBase
 libQt5Core.so.5:_ZTI7QObject
 libQt5Core.so.5:_ZTI9QRunnable
 libQt5Core.so.5:_ZeqRK7QStringS1_
-libQt5Core.so.5:_Zls6QDebugRK5QSize
 libQt5Core.so.5:qt_version_tag
 libQt5Gui.so.5:_ZN10QMatrix4x45scaleEff
 libQt5Gui.so.5:_ZN10QMatrix4x46rotateEffff
@@ -148,8 +146,12 @@ libQt5Gui.so.5:_ZN5QIconC1ERKS_
 libQt5Gui.so.5:_ZN5QIconC1Ev
 libQt5Gui.so.5:_ZN5QIconD1Ev
 libQt5Gui.so.5:_ZN5QIconaSERKS_
+libQt5Gui.so.5:_ZN6QColoraSEN2Qt11GlobalColorE
+libQt5Gui.so.5:_ZN6QColoraSERKS_
 libQt5Gui.so.5:_ZN6QImageC1EPKhiiiNS_6FormatEPFvPvES3_
+libQt5Gui.so.5:_ZN6QImageC1ERKS_
 libQt5Gui.so.5:_ZN6QImageC1Ev
+libQt5Gui.so.5:_ZN6QImageD1Ev
 libQt5Gui.so.5:_ZN7QRegionC1ERK5QRectNS_10RegionTypeE
 libQt5Gui.so.5:_ZN7QRegionC1ERKS_
 libQt5Gui.so.5:_ZN7QRegionC1EiiiiNS_10RegionTypeE
@@ -175,7 +177,6 @@ libQt5Gui.so.5:_ZNK7QRegioneqERKS_
 libQt5Gui.so.5:_ZlsR11QDataStreamRK5QIcon
 libc.so.6:__cxa_atexit
 libc.so.6:__stack_chk_fail
-libc.so.6:abort
 libc.so.6:close
 libc.so.6:lseek
 libc.so.6:memcmp
@@ -186,6 +187,7 @@ libc.so.6:strcmp
 libc.so.6:strlen
 libc.so.6:unlink
 libstdc++.so.6:_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm
+libstdc++.so.6:_ZSt25__throw_bad_function_callv
 libstdc++.so.6:_ZTVN10__cxxabiv117__class_type_infoE
 libstdc++.so.6:_ZTVN10__cxxabiv120__si_class_type_infoE
 libstdc++.so.6:_ZTVN10__cxxabiv121__vmi_class_type_infoE
@@ -202,6 +204,7 @@ libwayland-server.so.0:wl_client_get_credentials
 libwayland-server.so.0:wl_client_get_object
 libwayland-server.so.0:wl_client_post_no_memory
 libwayland-server.so.0:wl_display_add_destroy_listener
+libwayland-server.so.0:wl_display_add_shm_format
 libwayland-server.so.0:wl_display_add_socket
 libwayland-server.so.0:wl_display_add_socket_auto
 libwayland-server.so.0:wl_display_add_socket_fd
@@ -223,12 +226,18 @@ libwayland-server.so.0:wl_global_create
 libwayland-server.so.0:wl_global_destroy
 libwayland-server.so.0:wl_global_get_interface
 libwayland-server.so.0:wl_global_remove
+libwayland-server.so.0:wl_list_empty
+libwayland-server.so.0:wl_list_init
+libwayland-server.so.0:wl_list_insert
+libwayland-server.so.0:wl_list_insert_list
 libwayland-server.so.0:wl_list_remove
 libwayland-server.so.0:wl_resource_add_destroy_listener
 libwayland-server.so.0:wl_resource_create
 libwayland-server.so.0:wl_resource_destroy
+libwayland-server.so.0:wl_resource_from_link
 libwayland-server.so.0:wl_resource_get_client
 libwayland-server.so.0:wl_resource_get_id
+libwayland-server.so.0:wl_resource_get_link
 libwayland-server.so.0:wl_resource_get_user_data
 libwayland-server.so.0:wl_resource_get_version
 libwayland-server.so.0:wl_resource_instance_of
@@ -244,3 +253,5 @@ libwayland-server.so.0:wl_shm_buffer_get_format
 libwayland-server.so.0:wl_shm_buffer_get_height
 libwayland-server.so.0:wl_shm_buffer_get_stride
 libwayland-server.so.0:wl_shm_buffer_get_width
+libwayland-server.so.0:wl_shm_buffer_ref_pool
+libwayland-server.so.0:wl_shm_pool_unref
