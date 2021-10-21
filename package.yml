@@ -1,8 +1,8 @@
 name       : kwayland-server
-version    : 5.23.0
-release    : 21
+version    : 5.23.1
+release    : 22
 source     :
-    - https://cdn.download.kde.org/stable/plasma/5.23.0/kwayland-server-5.23.0.tar.xz : 3009d7249af74582afa89978d478eece3424e5ef225bdb6f40032e2a6471d671
+    - https://cdn.download.kde.org/stable/plasma/5.23.1/kwayland-server-5.23.1.tar.xz : ebad1a6dc1bf246cab9ca8ba0a13edd578646cb333ce09303d79d78727a59d57
 license    : LGPL-2.1-or-later
 component  : desktop.kde.core
 summary    : Wayland server components built on KDE Frameworks
