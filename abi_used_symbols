@@ -1,6 +1,5 @@
 libEGL.so.1:eglGetProcAddress
 libQt5Core.so.5:_Z5qHashRK7QStringj
-libQt5Core.so.5:_Z7qstrcmpRK10QByteArrayPKc
 libQt5Core.so.5:_Z8qstrncpyPcPKcj
 libQt5Core.so.5:_ZN10QArrayData10deallocateEPS_mm
 libQt5Core.so.5:_ZN10QArrayData11shared_nullE
@@ -8,6 +7,7 @@ libQt5Core.so.5:_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE
 libQt5Core.so.5:_ZN10QByteArray11fromRawDataEPKci
 libQt5Core.so.5:_ZN10QByteArray11reallocDataEj6QFlagsIN10QArrayData16AllocationOptionEE
 libQt5Core.so.5:_ZN10QByteArray6appendEPKc
+libQt5Core.so.5:_ZN10QByteArray6appendEPKci
 libQt5Core.so.5:_ZN10QByteArray6appendEc
 libQt5Core.so.5:_ZN10QByteArrayaSERKS_
 libQt5Core.so.5:_ZN11QDataStreamC1EP9QIODevice
@@ -113,7 +113,6 @@ libQt5Core.so.5:_ZN9QMetaType22registerNormalizedTypeERK10QByteArrayPFvPvEPFS3_S
 libQt5Core.so.5:_ZN9QRunnableD2Ev
 libQt5Core.so.5:_ZN9QtPrivate20QStringList_containsEPK11QStringList13QLatin1StringN2Qt15CaseSensitivityE
 libQt5Core.so.5:_ZN9QtPrivate20QStringList_containsEPK11QStringListRK7QStringN2Qt15CaseSensitivityE
-libQt5Core.so.5:_ZNK10QByteArray5splitEc
 libQt5Core.so.5:_ZNK10QByteArray6isNullEv
 libQt5Core.so.5:_ZNK10QByteArray8toBase64Ev
 libQt5Core.so.5:_ZNK11QFileDevice6handleEv
@@ -176,6 +175,7 @@ libQt5Gui.so.5:_ZNK7QRegionanERK5QRect
 libQt5Gui.so.5:_ZNK7QRegioneqERKS_
 libQt5Gui.so.5:_ZlsR11QDataStreamRK5QIcon
 libc.so.6:__cxa_atexit
+libc.so.6:__errno_location
 libc.so.6:__stack_chk_fail
 libc.so.6:close
 libc.so.6:lseek
@@ -183,7 +183,9 @@ libc.so.6:memcmp
 libc.so.6:memcpy
 libc.so.6:memmove
 libc.so.6:memset
+libc.so.6:open
 libc.so.6:strcmp
+libc.so.6:strerror
 libc.so.6:strlen
 libc.so.6:unlink
 libstdc++.so.6:_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm
